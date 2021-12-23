@@ -176,3 +176,35 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+/*********************** buttons ******************************/
+
+.btn {
+  border-radius: 3.8rem;
+  padding: 1rem 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.bnt--accent {
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+}
+
+.btn--block {
+  display: inline-block;
+}
