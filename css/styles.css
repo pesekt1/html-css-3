@@ -155,7 +155,7 @@ a {
   }
 }
 
-/* Icons */
+/*********************** Icons **********************/
 
 .icon {
   width: 40px;
@@ -171,6 +171,7 @@ a {
   width: 64px;
   height: 64px;
   border-radius: 100%;
+  /* to get the icon in the center of the container, we need inline-flex and set promary and secondary axes to center */
   display: inline-flex;
   justify-content: center;
   align-items: center;
