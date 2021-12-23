@@ -284,6 +284,7 @@ a {
   border-radius: var(--border-radius);
 }
 
+/* nesting */
 .input-group .input {
   border: none;
   flex-grow: 1;
