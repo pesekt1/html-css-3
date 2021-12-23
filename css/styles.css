@@ -181,12 +181,14 @@ a {
 
 .btn {
   border-radius: 3.8rem;
-  padding: 1rem 1rem;
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
   border: none;
   cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .btn--primary {
@@ -199,12 +201,15 @@ a {
   color: #fff;
 }
 
-.bnt--accent {
+.btn--accent {
   background: var(--color-accent);
   color: #fff;
-  border: none;
 }
 
 .btn--block {
   display: inline-block;
+  width: 100%;
+  border: solid;
+  background: transparent;
+  color: var(--color-headings);
 }
