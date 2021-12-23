@@ -7,6 +7,14 @@
   --color-body: #918ca4;
 }
 
+/********************** properties for all elements *******************/
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /********************** Typography ********************************/
 html {
   /* 62.5% of 16 = 10 */
@@ -187,6 +195,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   padding: 1rem 1rem;
+  text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -206,10 +215,36 @@ a {
   color: #fff;
 }
 
+.btn--primary:hover {
+  background: #5a9ff8;
+}
+
+.btn--secondary:hover {
+  background: #7de9fc;
+}
+
+.btn--accent:hover {
+  background: rgb(253, 93, 44) 0;
+}
+
 .btn--block {
   display: inline-block;
   width: 100%;
-  border: solid;
-  background: transparent;
+}
+
+.btn--outline {
+  background: #fff;
+  border: solid 2px;
   color: var(--color-headings);
+}
+
+.btn--outline:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
