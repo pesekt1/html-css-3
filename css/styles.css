@@ -309,9 +309,11 @@ a {
 }
 
 .card__header {
+  padding: 3rem 3rem;
 }
 
 .card__body {
+  padding: 3rem 3rem;
 }
 
 .card__header--primary {
@@ -322,4 +324,12 @@ a {
 .card__header--secondary {
   background: var(--color-secondary);
   color: #fff;
+}
+
+.card__header .badge--primary {
+  background: #126de4;
+}
+
+.card__header .badge--secondary {
+  background: #01cdf1;
 }
