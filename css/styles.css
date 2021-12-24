@@ -295,8 +295,31 @@ a {
   margin: 4px;
 }
 
-.input-group .icon {
+.input-group .btn .icon {
   width: 1.8rem;
   height: 1.8rem;
   fill: #fff;
+}
+
+/**************************** Cards *************************/
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card__header {
+}
+
+.card__body {
+}
+
+.card__header--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.card__header--secondary {
+  background: var(--color-secondary);
+  color: #fff;
 }
