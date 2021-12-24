@@ -307,7 +307,8 @@ a {
 .card {
   border-radius: 7px;
   overflow: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .card__header,
@@ -336,10 +337,10 @@ a {
 
 /********************** Plans *****************************/
 .plan__name {
-  font-size: 2.4rem;
   color: #fff;
-  margin-top: 0;
+  font-size: 2.4rem;
   font-weight: 600;
+  margin-top: 0;
 }
 
 .plan__price {
@@ -347,16 +348,16 @@ a {
 }
 
 .plan__description {
+  display: block;
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1px;
-  display: block;
 }
 
 .plan__billing-cycle {
-  opacity: 0.8;
-  margin-right: 1rem;
   font-weight: 300;
+  margin-right: 1rem;
+  opacity: 0.8;
 }
 
 .list__item {
@@ -380,4 +381,21 @@ a {
   .plan__billing-cycle {
     font-size: 1.6rem;
   }
+}
+
+.plan--popular .card__header {
+  border-radius: 5px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  margin-top: 5px;
+  position: relative;
+}
+
+/* popular badge */
+.plan--popular .card__header::before {
+  content: url(../images/icons/popular.svg);
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  top: -5px;
+  width: 40px;
 }
