@@ -302,34 +302,35 @@ a {
 }
 
 /**************************** Cards *************************/
+/* Structure */
 .card {
-  border-radius: 5px;
+  border-radius: 7px;
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card__header {
-  padding: 3rem 3rem;
-}
-
+.card__header,
 .card__body {
   padding: 3rem 3rem;
 }
 
-.card__header--primary {
+/* Skin */
+.card--primary .card__header {
   background: var(--color-primary);
   color: #fff;
 }
 
-.card__header--secondary {
+.card--secondary .card__header {
   background: var(--color-secondary);
   color: #fff;
 }
 
-.card__header .badge--primary {
+.card--primary .badge {
   background: #126de4;
+  color: #fff;
 }
 
-.card__header .badge--secondary {
+.card--secondary .badge {
   background: #01cdf1;
+  color: #fff;
 }
