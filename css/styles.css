@@ -325,12 +325,43 @@ a {
   color: #fff;
 }
 
-.card--primary .badge {
+/* .card--primary .badge {
   background: #126de4;
   color: #fff;
 }
 
 .card--secondary .badge {
+  background: #01cdf1;
+  color: #fff;
+} */
+
+/********************** Plans *****************************/
+.plan .plan__name {
+  font-size: 2.4rem;
+  color: #fff;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.plan .plan__price {
+  font-size: 6rem;
+}
+
+.plan .plan__description {
+  font-size: 2rem;
+  display: block;
+}
+
+.plan .plan__billing-cycle {
+  opacity: 0.8;
+}
+
+.plan .badge--primary {
+  background: #126de4;
+  color: #fff;
+}
+
+.plan .badge--secondary {
   background: #01cdf1;
   color: #fff;
 }
