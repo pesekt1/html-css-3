@@ -400,3 +400,27 @@ a {
   top: -5px;
   width: 40px;
 }
+
+/********************** Media ****************************/
+
+.media {
+  display: flex;
+}
+
+.media__image {
+  margin-top: 1rem;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__title {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-top: 0rem;
+}
+
+.media__body p {
+  font-size: 2rem;
+}
