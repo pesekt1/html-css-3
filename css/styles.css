@@ -483,3 +483,9 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Testimonials */
+
+.testimonial__image {
+  width: 100%;
+}
