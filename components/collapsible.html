@@ -1,0 +1,24 @@
+<!-- Collapsible -->
+<div class="collapsible collapsible--expanded">
+  <header class="collapsible__header">
+    <h3 class="collapsible__heading">Header</h3>
+    <a href="#">
+      <svg class="icon icon--white icon--small collapsible__chevron">
+        <use xlink:href="images/sprite.svg#chevron"></use>
+      </svg>
+    </a>
+  </header>
+  <div class="collapsible__content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ad.
+  </div>
+</div>
+
+<!-- JavaScript for toggling the collapsible--expanded class -->
+<script>
+  const collapsibles = document.querySelectorAll(".collapsible");
+  collapsibles.forEach((item) =>
+    item.addEventListener("click", function () {
+      this.classList.toggle("collapsible--expanded");
+    })
+  );
+</script>
