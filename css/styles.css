@@ -546,6 +546,7 @@ a {
 
 .callout__header {
   color: #fff;
+  margin-top: 0;
 }
 
 .callout .btn {
@@ -564,7 +565,7 @@ a {
     margin: 0 2rem;
   }
 
-  .grid--1x2 {
+  .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
 }
