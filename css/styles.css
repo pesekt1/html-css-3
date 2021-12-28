@@ -406,6 +406,14 @@ a {
 }
 
 /********************* popular badge ************************/
+.plan {
+  transition: transform 0.2s ease-out;
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+
 .plan--popular .card__header {
   border-radius: 5px 5px 0 0;
   /* FIXME: shadow should be only on the top, fix this */
@@ -421,6 +429,14 @@ a {
   right: 5%;
   top: -5px;
   width: 40px;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 
 /********************** Media ****************************/
@@ -777,21 +793,16 @@ a {
 /******************** Plans block *************************/
 
 .block-plans .grid {
-  row-gap: 4rem;
+  gap: 8rem 4rem;
 }
 
-.block-plans .card {
+.block-plans .plan {
   max-width: 400px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 1024px) {
-  .block-plans .card {
+  .block-plans .plan {
     margin: 0 1.5rem;
-  }
-
-  .block-plans .card:hover {
-    transform: scale(1.1);
-    transition: all 0.3s;
   }
 }
