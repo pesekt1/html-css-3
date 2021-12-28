@@ -497,7 +497,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -771,5 +771,27 @@ a {
     /* display: flex;
     justify-content: space-between; */
     font-size: 1.5rem;
+  }
+}
+
+/******************** Plans block *************************/
+
+.block-plans .grid {
+  row-gap: 4rem;
+}
+
+.block-plans .card {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .block-plans .card {
+    margin: 0 1.5rem;
+  }
+
+  .block-plans .card:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
   }
 }
