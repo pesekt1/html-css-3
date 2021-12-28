@@ -270,6 +270,13 @@ a {
   content: "🔎 ";
 } */
 
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
@@ -298,6 +305,7 @@ a {
 }
 
 /*********************** Input groups ****************************/
+/* TODO: button should go over the placeholder text if not enough space */
 
 .input-group {
   display: flex;
@@ -309,17 +317,11 @@ a {
 .input-group .input {
   border: none;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
   margin: 4px;
-}
-
-.input-group .btn .icon {
-  width: 1.8rem;
-  height: 1.8rem;
-  fill: #fff;
 }
 
 /**************************** Cards *************************/
