@@ -746,3 +746,30 @@ a {
     align-self: center;
   }
 }
+
+/************************ Domain block **************************/
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #f3f3f3;
+  border: none;
+  margin: 4rem 0;
+}
+
+.block-domain__prices {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row;
+  row-gap: 3rem;
+  /* grid-template-rows: repeat(auto-fit, 6rem); */
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    /* display: flex;
+    justify-content: space-between; */
+    font-size: 1.5rem;
+  }
+}
