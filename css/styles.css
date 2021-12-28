@@ -643,6 +643,8 @@ a {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
+/******************* Container ******************************/
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
