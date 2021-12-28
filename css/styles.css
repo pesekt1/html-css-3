@@ -305,7 +305,7 @@ a {
 }
 
 /*********************** Input groups ****************************/
-/* TODO: button should go over the placeholder text if not enough space */
+/* FIXME: button should go over the placeholder text if not enough space */
 
 .input-group {
   display: flex;
@@ -408,7 +408,7 @@ a {
 /********************* popular badge ************************/
 .plan--popular .card__header {
   border-radius: 5px 5px 0 0;
-  /* TODO: shadow should be only on the top, fix this */
+  /* FIXME: shadow should be only on the top, fix this */
   box-shadow: 0 0 20px 10px #f3f3f3;
   margin-top: 5px;
   position: relative;
