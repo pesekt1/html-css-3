@@ -801,3 +801,26 @@ a {
 }
 
 /**************************** Features *******************************/
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature {
+  row-gap: 4rem;
+  column-gap: 2rem;
+  align-items: center;
+  margin: 12rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature:nth-child(odd) .feature__content {
+  order: 2;
+}
+
+.feature__image {
+  width: 100%;
+}
