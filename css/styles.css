@@ -776,6 +776,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: row;
   row-gap: 3rem;
+  /* FIXME: the auto-fit did not work, so I used row-gap instead */
   /* grid-template-rows: repeat(auto-fit, 6rem); */
   font-size: 2rem;
   font-weight: 600;
@@ -784,8 +785,6 @@ a {
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    /* display: flex;
-    justify-content: space-between; */
     font-size: 1.5rem;
   }
 }
