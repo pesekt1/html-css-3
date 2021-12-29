@@ -800,8 +800,4 @@ a {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1024px) {
-  .block-plans .plan {
-    margin: 0 1.5rem;
-  }
-}
+/**************************** Features *******************************/
