@@ -817,10 +817,12 @@ a {
   margin-top: 6rem;
 }
 
-.feature:nth-child(odd) .feature__content {
-  order: 2;
-}
-
 .feature__image {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-child(odd) .feature__content {
+    order: 2;
+  }
 }
