@@ -19,6 +19,12 @@
 }
 
 /********************** Typography ********************************/
+
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
 html {
   /* 62.5% of 16 = 10 */
   font-size: 62.5%;
@@ -40,6 +46,7 @@ h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
   line-height: 1.1;
+  font-weight: 500;
 }
 
 h1 {
@@ -144,7 +151,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  /* color: var(--color-headings); */
 }
 
 .list--inline .list__item {
@@ -155,6 +161,7 @@ a {
 .list--tick {
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
+  color: var(--color-headings);
 }
 
 .list--tick .list__item {
@@ -443,6 +450,7 @@ a {
 
 .media {
   display: flex;
+  margin-bottom: 4rem;
 }
 
 .media__image {
@@ -454,7 +462,7 @@ a {
 }
 
 .media__title {
-  /* color: #fff; */
+  color: #fff;
   font-size: 2.4rem;
   margin-top: 0rem;
 }
@@ -652,12 +660,12 @@ a {
 }
 
 .block--skewed-right {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
 .block--skewed-left {
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
@@ -736,10 +744,6 @@ a {
 }
 
 /******************** hero / banner *********************/
-
-.hero {
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-}
 
 .hero__tagline {
   color: #b9c3cf;
