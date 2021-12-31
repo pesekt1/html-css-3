@@ -144,7 +144,7 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-headings);
+  /* color: var(--color-headings); */
 }
 
 .list--inline .list__item {
@@ -829,17 +829,21 @@ a {
 
 /* Showcase block */
 
-.block-showcase--image {
+.block-showcase__image > img {
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .block-showcase .grid {
     grid-template-columns: 50% 50%;
-    justify-items: right;
   }
 
-  .block-showcase--image {
+  .block-showcase__image {
+    justify-self: end;
+  }
+
+  .block-showcase__image > img {
     width: auto;
+    max-width: 670px;
   }
 }
