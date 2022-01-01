@@ -662,13 +662,23 @@ a {
 }
 
 .block--skewed-right {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
 .block--skewed-left {
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+@media screen and (min-width: 768px) {
+  .block--skewed-right {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  }
+
+  .block--skewed-left {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
 }
 
 /******************* Container ******************************/
@@ -839,6 +849,11 @@ a {
 }
 
 /************************** Showcase block *******************/
+
+.block-showcase {
+  /* vertical | horizontal */
+  padding: 6rem 2rem;
+}
 
 .block-showcase__image > img {
   width: 100%;
