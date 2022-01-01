@@ -647,7 +647,9 @@ a {
   color: #b9c3cf;
 }
 
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: #fff;
 }
 
