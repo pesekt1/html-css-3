@@ -638,7 +638,6 @@ a {
 
 /************************** Blocks ***************************/
 .block {
-  --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
 }
 
@@ -818,11 +817,7 @@ a {
   row-gap: 4rem;
   column-gap: 2rem;
   align-items: center;
-  margin: 12rem 0;
-}
-
-.feature:first-of-type {
-  margin-top: 6rem;
+  margin: 6rem 0;
 }
 
 .feature__image {
@@ -830,6 +825,14 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .feature {
+    margin: 12rem 0;
+  }
+
+  .feature:first-of-type {
+    margin-top: 6rem;
+  }
+
   .feature:nth-child(odd) .feature__content {
     order: 2;
   }
