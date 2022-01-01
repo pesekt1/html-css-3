@@ -37,7 +37,6 @@ body {
   font-size: 2.4rem;
   /* line height 1.5x font-size */
   line-height: 1.5;
-  margin: 1rem;
 }
 
 h1,
@@ -532,6 +531,10 @@ a {
   padding: 3rem;
 }
 
+.testimonial .quote {
+  margin: 2rem 0;
+}
+
 .testimonial__image {
   position: relative;
 }
@@ -574,6 +577,10 @@ a {
 .callout--primary {
   background: var(--color-primary);
   color: #fff;
+}
+
+.callout--signup {
+  transform: translateY(5rem);
 }
 
 .callout__header {
@@ -638,6 +645,7 @@ a {
 
 /************************** Blocks ***************************/
 .block {
+  --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
 }
 
@@ -689,7 +697,11 @@ a {
 }
 
 .container--narrow {
-  max-width: 920px;
+  max-width: 940px;
+}
+
+.container--margin {
+  margin: 0 2rem;
 }
 
 /*********************** nav bar *************************/

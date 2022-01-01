@@ -15,42 +15,52 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- Domain block -->
-    <!-- block -->
-    <section class="block container block-domain">
+    <!-- testimonials block-->
+    <section class="block">
       <header class="block__header">
-        <h2 class="block__heading">
-          The best webhosting Starting at $9 per month
-        </h2>
-        <div class="container container--narrow">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <!-- input group -->
-          <div class="input-group">
-            <input
-              type="text"
-              class="input"
-              placeholder="Enter domain name here..."
-            />
-            <button class="btn btn--accent">
-              <svg class="icon icon--white">
-                <use xlink:href="images/sprite.svg#search"></use>
-              </svg>
-              Search
-            </button>
+        <h2>What our Customers are Saying</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      </header>
+      <div class="container">
+        <!-- Testimonials -->
+        <!-- Card -->
+        <div class="card testimonial">
+          <!-- Grid -->
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <img src="images/testimonial.jpg" alt="customer photo" />
+              <!-- Icon -->
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white">
+                  <use xlink:href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <!-- Quote -->
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos reprehenderit sequi quae, eos ratione quibusdam unde
+                placeat veniam assumenda totam.
+              </p>
+              <footer>
+                <!-- Media object -->
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary quote__line">
+                      <use xlink:href="images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">Jhone Lumeo</h3>
+                    <p class="quote__role">Xyz company ceo</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
           </div>
         </div>
-        <ul class="list block-domain__prices">
-          <li>.com $9</li>
-          <li><span class="badge badge--secondary">.sg $7.91</span></li>
-          <li>.space $12.98</li>
-          <li>.info $14.15</li>
-          <li>.net $16.15</li>
-          <li>.xyz $10.15</li>
-        </ul>
-      </header>
+      </div>
     </section>
   </body>
 </html>
